@@ -22,7 +22,6 @@ let colorArray = [
 window.addEventListener('click', (e) => {
   mouse.x = e.x;
   mouse.y = e.y;
-  console.log(mouse);
 })
 
 window.addEventListener("resize", () => {
