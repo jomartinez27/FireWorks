@@ -1,0 +1,27 @@
+{
+  "name": "javascript-project",
+  "version": "1.0.0",
+  "description": "# Background NAME is a single player game where the objective is to keep the firework going by clicking on the correct colored ember.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jomartinez27/javascript-proposal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jomartinez27/javascript-proposal/issues"
+  },
+  "homepage": "https://github.com/jomartinez27/javascript-proposal#readme",
+  "dependencies": {
+    "webpack": "^4.16.5"
+  }
+}
