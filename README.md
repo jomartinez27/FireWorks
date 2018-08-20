@@ -1,7 +1,7 @@
 # javascript-proposal
 
 # Background
-NAME is a single player game where the objective is to keep the firework going by clicking on the correct colored ember.
+FireWorks is a single player game where the objective is to keep the firework going by clicking on the correct colored ember.
 
 # Technology Used
 * JavaScript for game logic
