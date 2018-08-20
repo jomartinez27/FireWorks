@@ -2,12 +2,10 @@ const path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: './lib/canvas.js',
+  entry: "./lib/canvas.js",
   output: {
-    filename: './lib/bundle.js'
-  },
-  resolve: {
-    extensions: ['', '.js']
+    path: path.resolve(__dirname),
+    filename: "bundle.js"
   },
   module: {
     rules: [
@@ -15,7 +13,7 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules)/,
         use: {
-          loader: 'babel',
+          loader: 'babel-loader',
           query: {
             presets: ['es2015']
           }
@@ -23,5 +21,8 @@ module.exports = {
       }
     ]
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
+  resolve: {
+    extensions: [".js"]
+  }
 };
