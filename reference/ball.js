@@ -1,6 +1,6 @@
 const canvas = document.getElementById("canvas");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = 200;
+canvas.height = 300;
 const c = canvas.getContext('2d');
 
 window.addEventListener('keydown', (e) => {
@@ -36,6 +36,7 @@ function init() {
 
 function animate() {
   requestAnimationFrame(animate);
+  c.fillRect(0, 0, canvas.width, canvas.height);
   c.fillStyle = '#F00';
   circle.draw();
 }
