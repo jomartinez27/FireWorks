@@ -76,7 +76,7 @@ let circleArray = [];
 function init() {
 
   circleArray = [];
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 10; i++) {
     let radius = Math.random() * 15 + 1;
     let x = Math.random() * (innerWidth - radius * 2) + radius;
     let y = Math.random() * (innerHeight - radius * 2) + radius;
@@ -89,8 +89,9 @@ function init() {
 function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0, 0, innerWidth, innerHeight);
+    console.log("Hello")
 
-    for (var i = 0; i < circleArray.length; i++) {
+    for (let i = 0; i < circleArray.length; i++) {
       circleArray[i].update()
     }
   }
