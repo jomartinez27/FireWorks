@@ -1,6 +1,4 @@
 const canvas = document.getElementById("canvas");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
 
 const c = canvas.getContext('2d');
 
@@ -22,13 +20,6 @@ let colorArray = [
 window.addEventListener('mousemove', (e) => {
   mouse.x = e.clientX;
   mouse.y = e.clientY;
-})
-
-window.addEventListener("resize", () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  init();
 })
 
 function getDistance(x1, y1, x2, y2) {

@@ -1,4 +1,4 @@
-(function () {
+function animate() {
   function init() {
     let canvas = document.getElementsByTagName("canvas")[0]
     let c = canvas.getContext('2d');
@@ -34,6 +34,6 @@
 
     start();
   }
+};
 
-  window.addEventListener('load', init,false)
-}());
+export default animate;
