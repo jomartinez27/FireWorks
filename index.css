@@ -1,12 +1,9 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  text-align: center;
 }
 
 canvas {
-  margin: 0;
+  margin-top: 200px;
   padding: 0;
 }
 

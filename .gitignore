@@ -15,7 +15,6 @@
 
 /node_modules
 /yarn-error.log
-bundle.js
 bundle.js.map
 .DS-Store
 npm-debug.log
