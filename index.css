@@ -9,6 +9,10 @@ h3 {
   font-weight: bold;
 }
 
+canvas {
+  cursor: crosshair;
+}
+
 p {
   color: #FFF;
   margin: 0;
