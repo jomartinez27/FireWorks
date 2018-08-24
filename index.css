@@ -3,7 +3,6 @@ body {
 }
 
 canvas {
-  margin-top: 200px;
   padding: 0;
 }
 
@@ -11,9 +10,9 @@ img {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
-  canvas {
-    width: 400px;
-    height: 700px;
-  }
+h2 {
+  text-align: center; 
+  position: absolute;
+  z-index: 1;
+  color: #FFF;
 }
