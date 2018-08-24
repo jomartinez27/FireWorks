@@ -20,6 +20,12 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+
+      <link href="https://fonts.googleapis.com/css?family=Boogaloo|Fredoka+One" rel="stylesheet">
+
+      <style>
+      @import url('https://fonts.googleapis.com/css?family=Archivo+Black|Fredoka+One');
+    </style>
   </head>
   <body>
 
@@ -32,6 +38,16 @@
 
       <button id="mute" type="button" onclick="enableMute()"><i class="material-icons">volume_off</i></button>
       <button type="button" onclick="enableSound()"><i class="material-icons">volume_up</i></button>
+
+      <div class="links">
+        <a href="https://github.com/jomartinez27/FireWorks">
+        <img class="gitlogo" src="github-logo.png" alt="GitHub" height="50" width="50">
+      </a>
+
+      <a href="https://www.linkedin.com/in/jose-martinez-517a29149/">
+        <img class="linked" src="l-in.png" alt="linkedin" height="50" width="50">
+      </a>
+      </div>
     </div>
     <script type="text/javascript">
     function enableMute() {
@@ -47,7 +63,6 @@
     </script>
 
     <canvas id="canvas"></canvas>
-    <img src="images/night-sky-1.png" id="img">
     <audio id="cannon-shot" src="./sounds/firework_explosion.mp3" preload="auto" style="display: none"></audio>
     <script type="text/javascript" src="bundle.js"></script>
   </body>

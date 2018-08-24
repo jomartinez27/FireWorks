@@ -3,13 +3,10 @@ body {
   justify-content: center;
 }
 
-img {
-  display: none;
-}
-
 h3 {
   text-align: center;
   color: #FFF;
+  font-weight: bold;
 }
 
 p {
@@ -23,4 +20,25 @@ p {
   background-image: linear-gradient(#2831B3,#1D20A5,#151A75,#0A0D5E,#0D0D4D);
   text-align: center;
   color: #FFF;
+  font-family: 'Fredoka One', serif;
+  width: 200px;
+}
+
+.gitlogo {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+  margin-top: 200px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.linked {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+  margin-top: 200px;
 }
