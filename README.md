@@ -11,6 +11,7 @@ FireWorks is a JavaScript point and click game where users need to click on the 
 ## Features
 ### Mouse Tracker
 ![Mouse Track](images/mouse-track-gif.gif)
+
 The canvas has a mouse track event listener for the cannon, users can shoot in different places
 
 ### Collision
