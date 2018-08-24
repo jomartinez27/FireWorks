@@ -1,28 +1,46 @@
-# javascript-proposal
+# FireWorks
+Play my game! [Live](https://jomartinez27.github.io/FireWorks/)
 
-# Background
-FireWorks is a single player game where the objective is to keep the firework going by clicking on the correct colored ember.
+## ABOUT
+FireWorks is a JavaScript point and click game where users need to click on the correct ember to score points before the ember dies!
 
-# Technology Used
+## Technology Used
 * JavaScript for game logic
-* HTML5 Canvas for display
+* HTML5 for rendering images and sound
 
-# MVP
-* Start game by first initial click
-* Keep game alive by clicking correct color
-* Reset game if user loses
+## Features
+### Mouse Tracker
+![Mouse Track](images/mouse-track-gif.gif)
+The canvas has a mouse track event listener for the cannon, users can shoot in different places
 
-# Wireframes
-The app will be one screen, with canvas to render game, mute controller, links to GitHub and LinkedIn, and about modal.
+### Collision
+![Collision](images/collision-gif.gif)
 
-![mock](images/firework-mockup-img.png)
+When users click on the correct ember the game keeps going and users score points. I created a function that uses the Pythagorean theorem to get the distance between two points. If that distance is less than 10, (the particle radius + 3 to get a really close distance) The particle will disapear and a new cannonball will shoot triggering a new set of explosions.
 
-### Firework
-User starts the game by clicking on an unlit firework, the firework will shoot up the screen and burst, once the color bursts the user needs to click on the correct colored ember to keep the game alive.
+```JavaScript
+function getDistance(x1, y1, x2, y2) {
+  let xDistance = x2 - x1;
+  let yDistance = y2 - y1;
 
-### Sound
-Sound will be implemented for a launch effect and explosion effect. Users can toggle the sound on/off.
+  return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
+}
 
-# Bonus Features
-* Select different firework shapes
-* Change difficulty
+  for (var j = 0; j < explosions.length; j++) {
+    explosions[j].upate();
+    let particle = explosions[j].particles[0] || new Particle();
+    let x1 = particle.x || 0;
+    let y1 = particle.y || 0;
+    particle.color = cannonball.color
+
+    if (getDistance(x1, y1, mouse.x, mouse.y) < 10) {
+      particle.timeToLive = 0
+      cannonballs.push(cannonball);
+      points += 1
+      sound.playbackRate = 1.7;
+      sound.play();
+    }
+  }
+```
+
+If a user clicks on the correct ember the point will increase and a firework sound will play
