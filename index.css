@@ -1,18 +1,26 @@
 body {
-  text-align: center;
-}
-
-canvas {
-  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 img {
   display: none;
 }
 
-h2 {
-  text-align: center; 
-  position: absolute;
-  z-index: 1;
+h3 {
+  text-align: center;
+  color: #FFF;
+}
+
+p {
+  color: #FFF;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.about {
+  background-image: linear-gradient(#2831B3,#1D20A5,#151A75,#0A0D5E,#0D0D4D);
+  text-align: center;
   color: #FFF;
 }

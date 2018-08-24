@@ -17,11 +17,38 @@
     </style>
 
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
+
+    <div class="about">
+      <h3>How to play</h3>
+      <h4>Press Space to start</h4>
+      <p>When the firework explodes look for the rainbow colored
+        ball. Click it to keep the game going and score points!
+      </p>
+
+      <button id="mute" type="button" onclick="enableMute()"><i class="material-icons">volume_off</i></button>
+      <button type="button" onclick="enableSound()"><i class="material-icons">volume_up</i></button>
+    </div>
+    <script type="text/javascript">
+    function enableMute() {
+      let sound = document.getElementById('cannon-shot');
+      sound.muted = true;
+    }
+
+    function enableSound() {
+      let sound = document.getElementById('cannon-shot');
+      sound.muted = false;
+    }
+
+    </script>
+
     <canvas id="canvas"></canvas>
     <img src="images/night-sky-1.png" id="img">
-    <audio id="cannon-shot" src="./lib/cannon.mp3" preload="auto" style="display: none"></audio>
+    <audio id="cannon-shot" src="./lib/firework_explosion.mp3" preload="auto" style="display: none"></audio>
     <script type="text/javascript" src="bundle.js"></script>
   </body>
 </html>
