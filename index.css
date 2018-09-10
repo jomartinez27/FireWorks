@@ -1,6 +1,6 @@
 body {
   display: flex;
-  justify-content: center;
+  background-image: url(background-firework.jpg);
 }
 
 h3 {
@@ -21,9 +21,9 @@ p {
 }
 
 .about {
-  background-image: linear-gradient(#2831B3,#1D20A5,#151A75,#0A0D5E,#0D0D4D);
   text-align: center;
   color: #FFF;
+  text-shadow: 2px 2px #000;
   font-family: 'Fredoka One', serif;
   width: 200px;
   font-size: 25px;
