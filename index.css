@@ -1,6 +1,10 @@
 body {
   display: flex;
+  justify-content: center;
   background-image: url(background-firework.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
 }
 
 h3 {
@@ -11,6 +15,7 @@ h3 {
 
 canvas {
   cursor: crosshair;
+  background: #000
 }
 
 p {
