@@ -63,3 +63,15 @@ p {
 user-select: none;
 -moz-user-select: none;
 }
+
+#mute {
+  background-color: #f44336;
+  border: none;
+  padding: 6px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+#mute:hover {
+  background-color: #f66055;
+}
