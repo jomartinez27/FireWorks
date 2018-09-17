@@ -5,6 +5,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
+  user-select: none;
+  -moz-user-select: none;
 }
 
 h3 {
@@ -51,4 +53,9 @@ p {
   justify-content: flex-start;
   margin-left: 10px;
   margin-top: 200px;
+}
+
+#mute, #unmute {
+user-select: none;
+-moz-user-select: none;
 }

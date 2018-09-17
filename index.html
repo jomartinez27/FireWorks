@@ -33,7 +33,7 @@
       </p>
 
       <button id="mute" type="button" onclick="enableMute()"><i class="material-icons">volume_off</i></button>
-      <button type="button" onclick="enableSound()"><i class="material-icons">volume_up</i></button>
+      <button id="unmute" type="button" onclick="enableSound()"><i class="material-icons">volume_up</i></button>
       </div>
     </div>
     <script type="text/javascript">
@@ -49,7 +49,7 @@
 
     </script>
 
-    <canvas id="canvas" width="50" height="50"></canvas>
+    <canvas id="canvas"></canvas>
     <audio id="cannon-shot" src="./sounds/firework_explosion.mp3" preload="auto" style="display: none"></audio>
     <script type="text/javascript" src="bundle.js"></script>
   </body>
