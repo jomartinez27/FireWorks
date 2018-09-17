@@ -1,10 +1,8 @@
 body {
-  /* display: flex; */
-  justify-content: center;
-  background-image: url(background-firework.jpg);
+  background-image: url(pexels-photo.jpeg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; 
+  background-size: 100%; 
   user-select: none;
   -moz-user-select: none;
 }
@@ -17,7 +15,9 @@ h3 {
 
 canvas {
   cursor: crosshair;
-  background: #000
+  background: #000;
+  display: flex;
+  justify-content: center;
 }
 
 p {
@@ -38,25 +38,6 @@ p {
   top: 162px;
   left: 33em;
   z-index: 1;
-}
-
-.gitlogo {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 10px;
-  margin-top: 200px;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-}
-
-.linked {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 10px;
-  margin-top: 200px;
 }
 
 #mute, #unmute {
@@ -86,4 +67,15 @@ user-select: none;
 
 #unmute:hover {
   background-color: #5fb962;
+}
+
+.bottom {
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  width: 93%;
+}
+
+.links {
+  display: flex;
 }
