@@ -75,3 +75,15 @@ user-select: none;
 #mute:hover {
   background-color: #f66055;
 }
+
+#unmute {
+  background-color: #4CAF50;
+  border: none;
+  padding: 6px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+#unmute:hover {
+  background-color: #5fb962;
+}
