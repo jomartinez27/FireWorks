@@ -25,32 +25,41 @@
   </head>
   <body>
 
-    <div class="about">
+    <div id="about" class="about">
       <h3>How to play</h3>
       <h4>Press Space to start</h4>
       <p>When the firework explodes look for the rainbow colored
         ball. Click it to keep the game going and score points!
       </p>
 
-      <button id="mute" type="button" onclick="enableMute()"><i class="material-icons">volume_off</i></button>
-      <button id="unmute" type="button" onclick="enableSound()"><i class="material-icons">volume_up</i></button>
-      </div>
     </div>
-    <script type="text/javascript">
+  </div>
+  <script type="text/javascript">
     function enableMute() {
       let sound = document.getElementById('cannon-shot');
       sound.muted = true;
     }
-
+    
     function enableSound() {
       let sound = document.getElementById('cannon-shot');
       sound.muted = false;
     }
-
+    
+    window.addEventListener("keydown", e => {
+      if (e.keyCode === 32) {
+        const about = document.getElementById("about");
+        about.style.display = "none";
+      }
+    })
+    
     </script>
 
-    <canvas id="canvas"></canvas>
-    <audio id="cannon-shot" src="./sounds/firework_explosion.mp3" preload="auto" style="display: none"></audio>
-    <script type="text/javascript" src="bundle.js"></script>
+<canvas id="canvas"></canvas>
+<audio id="cannon-shot" src="./sounds/firework_explosion.mp3" preload="auto" style="display: none"></audio>
+<script type="text/javascript" src="bundle.js"></script>
+<div class="sound-control">
+    <button id="mute" type="button" onclick="enableMute()"><i class="material-icons">volume_off</i></button>
+    <button id="unmute" type="button" onclick="enableSound()"><i class="material-icons">volume_up</i></button>
+</div>
   </body>
 </html>
