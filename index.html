@@ -46,6 +46,7 @@
     }
     
     window.addEventListener("keydown", e => {
+      e.preventDefault();
       if (e.keyCode === 32) {
         const about = document.getElementById("about");
         about.style.display = "none";

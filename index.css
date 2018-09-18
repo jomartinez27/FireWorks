@@ -32,11 +32,9 @@ p {
   color: #FFF;
   text-shadow: 2px 2px #000;
   font-family: 'Fredoka One', serif;
-  width: 200px;
   font-size: 25px;
   position: absolute;
   top: 162px;
-  left: 33em;
   z-index: 1;
 }
 
