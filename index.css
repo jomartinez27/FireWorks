@@ -77,3 +77,16 @@ user-select: none;
 .links {
   display: flex;
 }
+
+@media screen and (min-width: 1200px)
+  and (max-width: 1600px)
+  {
+  .about {
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .about {
+    left: 9em;
+  }
+}
